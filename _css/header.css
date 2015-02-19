@@ -1,0 +1,39 @@
+/** HEADER SECTION **/
+#headerBG { background: url('../_images/bg-header.jpg') repeat #9655b9; height: 170px; margin-bottom: 35px; -webkit-box-shadow: 0 0 20px rgba(0,0,0,.6); -moz-box-shadow: 0 0 20px rgba(0,0,0,.6); box-shadow: 0 0 20px rgba(0,0,0,.6); }
+
+#logo { width: 472px; height: 64px; display: block; background: url('../_images/logo.png') no-repeat left top transparent; margin: 17px auto 0; text-indent: -9999px; }
+
+#ourPromise { width: 165px; height: 153px; display: block; background: url('../_images/our-promise.png') no-repeat left top transparent; position: absolute; left: -20px; top: 0; }
+
+/** MAIN MENU **/
+ul { list-style: disc; }
+ul, 
+ol { padding: 0; margin: 0 0 18px 25px; }
+li { line-height: 18px; }
+
+ul#menu { list-style: none; margin: 0 auto; text-align: center; width: 668px; position: relative; top: 22px; }
+	.dropup, 
+	.dropdown { position: relative; }
+	.dropdown-menu { position: absolute; top: 100%; left: 0; z-index: 1000; display: none; float: left; min-width: 160px; margin: 0; list-style: none; background: transparent; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2); -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2); box-shadow: 0 5px 10px rgba(0,0,0,.2); -webkit-background-clip: padding-box; -moz-background-clip: padding; background-clip: padding-box; }
+	ul.dropdown-menu { text-align: left; left: 3px; border-color: #fa8a1d; }
+		.dropdown-menu a { display: block; padding: 3px 15px; clear: both; font-weight: normal; line-height: 18px; color: #333; white-space: nowrap; }
+		ul.dropdown-menu li a { font-weight: bold; color: #fa8a1d; border: 1px solid #fa8a1d; border-bottom: 1px solid #df7105; padding: 5px 17px; background: #fff; background: rgba(255,255,255,.85); }
+			ul.dropdown-menu li:first-child a { border-radius: 5px 5px 0 0; }
+			ul.dropdown-menu li:last-child a { border-bottom: 1px solid #fa8a1d; -webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px; }
+
+				ul.dropdown-menu li>a:hover, 
+				ul.dropdown-menu .active>a, 
+				ul.dropdown-menu .active>a:hover { background-color: #fa8a1d; text-decoration: none; color: #fff; }
+
+
+	ul#menu>li { display: block; float: left; height: 89px; }	
+		ul#menu>li>a { display: block; background: url('../_images/ticket-menu.png') no-repeat left top transparent; width: 167px; line-height: 89px; font-family: ""Open Sans"","Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: normal; font-size: 21px; text-transform: uppercase; color: #fff; position: relative; overflow: hidden; }
+			ul#menu>li>a.two-lines { width: 147px; height: 64px; padding: 25px 10px 0 10px; line-height: 19px; }
+				ul#menu>li>a i { font-size: 20px; margin-right: -10px; color: rgba(255,255,255,.8); }
+		ul#menu>li:hover>a { color: #fff; text-decoration: none; top: -2px; -webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg); -ms-transform: rotate(-1deg); -o-transform: rotate(-1deg); transform: rotate(-1deg); -webkit-transform-origin: left bottom; -moz-transform-origin: left bottom; -ms-transform-origin: left bottom; -o-transform-origin: left bottom; transform-origin: left bottom; }
+
+/* 
+#locationFinder { position: absolute; right: 0; top: 25px; }
+	#locationFinder label { font-family: "ff-market-web","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 24px; color: #fff; text-transform: uppercase; }
+	#locationFinder input { margin-bottom: 0; width: 120px; font-size: 13px; }
+*/

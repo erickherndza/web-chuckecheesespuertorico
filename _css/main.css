@@ -1,0 +1,511 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {color: #222;}
+
+html {font-size: 1em; line-height: 1.4;}
+
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {background: #b3d4fc; text-shadow: none;}
+
+::selection {background: #b3d4fc; text-shadow: none;}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {vertical-align: middle;}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {border: 0; margin: 0; padding: 0;}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {resize: vertical;}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0;}
+
+
+/* --------------------------------------------------------------------------
+   
+   --------------------------------------------------------------------------
+   
+   -------------------------------------------------------------------------- */
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {position: absolute; width: 100%; height: 100%; background: url('../_images/bg.jpg') repeat #9655b9;}
+header {position: relative; z-index: 60; text-align: left;
+        -webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.4);
+        -moz-box-shadow: 0 0 10px 5px rgba(0,0,0,0.4);
+        box-shadow: 0 0 10px 5px rgba(0,0,0,0.4);}
+  header .wrapper {padding-left: 200px; width: 840px;}
+    #location_finder {float: right; margin-top: 10px; margin-bottom: -10px; margin-right: -75px; padding-left: 10px; width: 200px; height: 24px; border: solid 2px #fff; color: #fff;}
+    #best_deals {position: absolute; float: left; margin-left: -170px;}
+
+/* -----------------------
+   MEGA NAVIGATION 
+   ----------------------- */
+
+/* LEVEL 1 BUTTONS  */
+header nav { padding-top: 30px;}
+header nav > ul {display: inline-block; margin: 0;}
+  header nav > ul > li {display: inline-block; padding: 0 5px; vertical-align: bottom;}
+    .nav-btn {display: inline-block; width: 120px; height: 60px; margin-bottom: 4px; background-size: 100% 100%; background-repeat: no-repeat; text-indent:-9999px; overflow: hidden;}
+    #logo {display: inline-block; margin: 0 0 10px 0; width: 150px; height: 60px; background-image: url('../_images/header_logo-stacked.png'); background-size: 100% 100%; background-repeat: no-repeat;}
+    #experience_btn {background-image: url('../_images/btn_experience.png');}
+    #events_btn {background-image: url('../_images/btn_cumple.png');}
+    #activities_btn {background-image: url('../_images/btn_events.png');} 
+    #memorias_btn {background-image: url('../_images/btn_memorias.png');}
+    #share_btn {background-image: url('../_images/btn_share.png');}
+      #experience_btn.active {background-image: url('../_images/btn_experience_active.png');}
+      #events_btn.active {background-image: url('../_images/btn_cumple_active.png');}
+      #activities_btn.active {background-image: url('../_images/btn_events_active.png');}
+      #memorias_btn.active {background-image: url('../_images/btn_memorias_active.png');}
+      #share_btn.active {background-image: url('../_images/btn_share_active.png');}
+
+/* DROPDOWN */
+.dropdown {position: absolute; padding: 20px; width: 720px; z-index: -1; display: none;
+           -webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8); 
+           -moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8); 
+           box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+/*           -webkit-transform: translate(0,-407px);*/
+/*           -ms-transform: translate(0,-407px);*/
+/*           transform: translate(0,-407px);*/
+           -webkit-transition: none;
+           /*-moz-transition: -moz-transform 1s ease-in-out;*/
+           -ms-transition: none;
+           transition: none;}
+  .xdrop {-webkit-transform: translate(0,0);
+         -ms-transform: translate(0,0);
+         transform: translate(0,0);
+         -webkit-transition: -webkit-transform 200ms linear;
+         /*-moz-transition: -moz-transform 1s ease-in-out;*/
+         -ms-transition: -ms-transform 1s linear;
+         transition: transform 1s linear;}
+  .dropdown.experience {margin-left: -29px;}
+  .dropdown.events {margin-left: -163px;}
+  .dropdown.activities {margin-left: -461px;}
+  .dropdown.memorias {margin-left: -461px;}
+  .dropdown.share {margin-left: -595px;}
+  .dropdown img {float: right; width: 450px; height: 337px;}
+  .dropdown > ul {float: left; margin: 0; padding: 20px; width: 190px; height: 297px; background: rgba(0,0,0,0.3);}
+    .dropdown a {text-decoration: none;}
+    .dropdown span {line-height: 33px; font-size: 15px; color: #fff; 
+                    -webkit-transition: color 160ms ease-in;
+                    /*-moz-transition: -moz-transform 1s ease-in-out;*/
+                    -ms-transition: color 160ms ease-in;
+                    transition: color 160ms ease-in-out;}
+    .dropdown span:hover {color: #ffcc00}
+    
+    header .plus,
+    header .minus {display: none;}
+
+
+/* -----------------------
+   JUMBO GALLERY
+   ----------------------- */
+
+.gallery {position: relative; left: 0; width: 100%; height: 628px; z-index: 10; overflow: hidden;}
+
+/* SLIDES */
+.gallery .slide {display: none; position: absolute; z-index: 35; top: 0; left: 0; width: 100%; height: 100%; background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
+
+
+/* CAPTION */
+.caption {display: none; position: absolute; z-index: 35; right: 0; padding: 10px 42px 20px 20px; background: rgba(0,0,0,0.4); color: #fff;}
+  .caption:first-of-type {display: block;}
+  .caption.top {top: 40px;}
+  .caption.bottom {bottom: 150px;}
+  .caption.right {-webkit-transform: translate(88%,0);
+                  -ms-transform: translate(88%,0);
+                  transform: translate(88%,0);}
+  .caption a {color: #ffffff; text-decoration: none; text-align: right;
+              -webkit-transition: color 160ms ease-in;
+              /*-moz-transition: -moz-transform 1s ease-in-out;*/
+              -ms-transition: color 160ms ease-in;
+              transition: color 160ms ease-in-out;}
+    
+    .caption h2,
+    .caption p,
+    .caption h3 {margin: 10px 0 10px auto; color: inherit;}
+    .caption h2 {font-size: 30px; line-height: normal; margin-right: -10px; padding-right: 10px;}
+    .caption h2:nth-child(2) {margin-top: -30px;}
+    .caption p {font-size: 13px; line-height: normal;}
+    .caption h3 {margin-top: -10px; margin-bottom: 0; font-size: 21px; line-height: normal;}
+    .caption .plus,
+    .caption .minus {display: none; font-size: 24px;}
+    .caption p {max-width: 470px; margin-top: -15px;}
+
+/* PAGER */
+.gallery .wrapper {position: relative; margin: 0 auto; z-index: 30;}
+  .pager {position: relative; top: 275px; left: 50%; margin-left: -604px; margin-bottom: 0; padding-left: 325px; width: 960px; height: 455px;
+          background-image: url('../_images/chucke-pager.png'); background-repeat: no-repeat; background-position: 67px 105px;}
+    .pager a {cursor: pointer; float: left; margin: 250px 20px 0 0; padding: initial; width: 140px; height: 90px; 
+              opacity: 0.7; background-position: 0 0; background-size: cover; background-repeat: no-repeat; background-color: transparent; border: none; -webkit-border-radius: initial; -moz-border-radius: initial; border-radius: initial;}
+
+      .pager a.active {opacity: 1;}
+      .pager a:hover {opacity: 1; background-color: transparent;}
+      .pager a:nth-child(5) {margin-right: 0;}
+      .pager a:nth-child(n+6) {display: none;}
+
+  /* ANIMATE ON PAGE LOAD */
+  .pager {-moz-animation-name: chucke; -moz-animation-iteration-count: 1; -moz-animation-timing-function: ease-in; -moz-animation-duration: 1.4s;
+          -webkit-animation-name: chucke; -webkit-animation-iteration-count: 1; -webkit-animation-timing-function: ease-in; -webkit-animation-duration: 1.4s;}
+          @-moz-keyframes chucke { 0% {background-position: 0 455px;} 70% {background-position: 0 455px;} 100% {background-position: 0 0;} }
+          @-webkit-keyframes chucke { 0% {background-position: 0 455px;} 70% {background-position: 0 455px;} 100% {background-position: 0 0;} }
+    .pager a {-moz-animation-name: buttons; -moz-animation-iteration-count: 1; -moz-animation-timing-function: ease-in; -moz-animation-duration: 0.4s; -moz-animation-delay: 1400ms; -moz-animation-fill-mode: backwards;
+              -webkit-animation-name: buttons; -webkit-animation-iteration-count: 1; -webkit-animation-timing-function: ease-in;-webkit-animation-duration: 0.4s; -webkit-animation-delay: 1400ms; -webkit-animation-fill-mode: backwards;}
+              @-moz-keyframes buttons { 0% {margin-left: -150px; opacity: 0;} 100% {opacity: 0.7;} }
+              @-webkit-keyframes buttons { 0% {margin-left: -150px; opacity: 0;} 100% {opacity: 0.7;} }
+
+
+/* FOOTER */
+footer {position: relative; z-index: 40; text-align: center; font-weight: bold; color: #fff; background: none !important;}
+  footer nav {padding: 0 40px;}
+    footer nav a {padding: 0 10px; border-left: 1px solid #fff; line-height: 18px; font-size: 13px; text-decoration: none; color: #fff;}
+      footer nav a:first-child {padding-left: 0; border-left: none;}
+      footer nav a:hover {text-decoration: underline;}
+
+
+/* CUSTOM HELPER CLASSES */
+.wrapper {margin: 0 auto;}
+.bg-purple {background: url('../_images/bg.jpg') repeat #9655b9;}
+.inner-top-shadow {-webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8); 
+                   -moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8); 
+                   box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);}
+.caption-slide {-webkit-transition: -webkit-transform 200ms ease-in-out;
+                /*-moz-transition: -moz-transform 1s ease-in-out;*/
+                -ms-transition: -ms-transform 200ms ease-in-out;
+                transition: transform 200ms ease-in-out;}
+
+
+/* RESPONSIVE */
+@media (min-width: 1000px) {
+  footer nav {padding: 0 30px;}
+}
+@media (max-width: 1000px) {
+   .pager {background: none; margin-left: -390px; padding-left: 0; width: 780px;}
+}
+@media (max-width: 975px) {
+  header .wrapper {width: 575px; padding-left: 115px;}
+    #location_finder {margin-right: 0;}
+    #best_deals {width: 148px; margin-left: -135px;}
+    header nav {padding-top: 74px;}
+      header nav > ul > li {padding: 0;}
+        header nav > ul:nth-child(2) {position: absolute; top: 10px; margin-left: -75px; padding: 0;}
+
+  .dropdown {width: 640px;}
+    .dropdown.experience {margin-left: -110px;}
+    .dropdown.events {margin-left: -234px;}
+    .dropdown.activities {margin-left: -358px;}
+    .dropdown.share {margin-left: -482px;}
+      .dropdown img {width: 390px; height: 287px;}
+      .dropdown > ul {width: 190px; height: 247px;}
+}
+@media (max-width: 979px) {
+  body {padding: 0;}
+}
+@media (max-width: 790px) {
+  .gallery {height: 555px;}
+    .pager {top: 175px; margin-left: -80px; width: 160px;}
+      .pager a {margin-top: 320px; width: 14px; height: 14px; border-radius: 14px; border: solid 1px #505050; background: #e5e5e5 !important;} 
+}
+@media (max-width: 700px) {
+  header {-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8); -moz-box-shadow: 0 0 20px rgba(0,0,0,0.8); box-shadow: 0 0 20px rgba(0,0,0,0.8);}  
+    header .wrapper {width: 280px; height: 115px; padding-left: 0;}
+    #location_finder {float: left; margin-top: 70px; width: 150px;}
+    #best_deals {display: none;}
+    #logo {position: absolute; z-index: 56; top: 10px; left: 50%; margin-left: -146px; width: 292px; height: 32px; background-image: url('../_images/header_logo.png');}
+    .nav-toggle {display: block !important; margin-top: 70px; margin-left: 88px;}
+      .icon-bar {display: block !important;}
+    header nav {position: absolute; z-index: -1; top: 115px; padding: 0 20px 20px; margin-left: -20px;
+                -webkit-transform: translate(0,-260px);
+                -ms-transform: translate(0,-260px);
+                transform: translate(0,-260px);
+                -webkit-transition: none;
+                /*-moz-transition: -moz-transform 1s ease-in-out;*/
+                -ms-transition: none;
+                transition: none;}
+    header nav.drop {-webkit-transform: translate(0,0);
+                     -ms-transform: translate(0,0);
+                     transform: translate(0,0);
+                     -webkit-transition: -webkit-transform .4s ease-in-out;
+                     /*-moz-transition: -moz-transform 1s ease-in-out;*/
+                     -ms-transition: -ms-transform .4s ease-in-out;
+                     transition: transform .4s ease-in-out;}
+      header nav > ul {padding: 20px; background: rgba(0,0,0,0.3);}
+      header nav > ul:last-child {display: none;}  
+        header nav > ul > li {float: left; clear: left; width: 240px;}
+        header nav > ul > li:nth-child(3) {position: relative; top: 0; margin-left: 0;}
+          header nav img {display: none;}
+          header nav div {display: none; opacity: 0.6; margin-left: 12px;}
+           header nav div ul {margin: 0;}
+          .dropdown {width: auto;}
+          header nav a {color: #fff; font-size: 16px; text-decoration: none; line-height: 44px; font-weight: bold;}
+          header nav a:hover {color: #fff; text-decoration: none;}
+          .nav-btn {width: 225px; height: auto; margin-bottom: 0; background-image: none !important; text-indent: 0; font-size: 25px;}
+          .nav-btn.active {background-image: none !important;}
+          .nav-btn.inner-top-shadow {-webkit-box-shadow: none; 
+                                     -moz-box-shadow: none;
+                                     box-shadow: none;}
+            /* custom mobile menu options */
+            #activities_btn {display: none !important;}
+            .dropdown.activities {display: none !important;}
+            #share_btn span {display: none;}
+            .share {display: none !important;}
+  .gallery {height: 500px;}
+    .caption {bottom: 0; left: 0;}
+      .caption a {text-align: left;}
+      .caption p {display: none; max-width: none; margin:0;}
+      .caption a h2 {line-height: 15px; margin: 0 !important; padding-right: 0;}
+      .caption a h2:first-line {line-height: normal;}
+      .caption h2:nth-child(2) {margin-top: -12px !important;}
+      .caption a h3 {margin-top: 0;}
+      
+      .plus,
+      .minus {float: right; color: #fff; font-size: 25px; line-height: 44px; font-weight: bold; cursor: pointer;}
+        header .plus,
+        .caption .plus {display: inline-block;}
+        .minus {display: none;}
+        .plus.expanded  {display: none;}
+        .minus.expanded  {display: inline-block;}
+  
+  footer .wrapper:first-child {width: 92%;}
+    .pager {top: 0; padding-bottom: 20px; height: 12px;}
+      .pager a {margin-top: 0;}
+  footer nav {padding: initial; padding-bottom: 20px; border-bottom: solid 2px white; width: 92%;margin: 0 auto 20px;}
+}
+@media (max-width: 500px) {
+  .gallery {height: 205px;}
+}
+@media (max-width: 380px) {
+  .gallery {height: 365px;}
+        .caption h2:nth-child(2) {margin-top: 0 !important;}
+        .caption p{margin-top: 10px ! important;}
+}
+
+
+/* HAMBURGER MENU */
+.nav-toggle {display: none; float: right; padding: 7px 10px; line-height: 18px;
+             background-color: #fba14a; background-repeat: repeat-x;
+               background-image: -moz-linear-gradient(top,#fcb168,#fa8a1d);
+               background-image: -ms-linear-gradient(top,#fcb168,#fa8a1d);
+               background-image: -webkit-gradient(linear,0 0,0 100%,from(#fcb168),to(#fa8a1d));
+               background-image: -webkit-linear-gradient(top,#fcb168,#fa8a1d);
+               background-image: -o-linear-gradient(top,#fcb168,#fa8a1d);
+               background-image: linear-gradient(top,#fcb168,#fa8a1d);
+               filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcb168',endColorstr='#fa8a1d',GradientType=0);
+             box-shadow: inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.075);
+               -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.075);
+               -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.075);
+             border: 1px solid #ccc; border-color: #fa8a1d #fa8a1d #c66404; border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25); filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+               -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+.nav-toggle:hover {color: #333; text-decoration: none; background-color: #fa8a1d; background-position: 0 -15px;
+                   transition: background-position .1s linear;
+                     -webkit-transition: background-position .1s linear;
+                     -moz-transition: background-position .1s linear;
+                     -ms-transition: background-position .1s linear;
+                     -o-transition: background-position .1s linear;}
+.icon-bar {display: none; margin-top: 3px; width: 18px; height: 2px; line-height: .9em; background-color: #f5f5f5; -webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px; -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.25); -moz-box-shadow: 0 1px 0 rgba(0,0,0,.25); box-shadow: 0 1px 0 rgba(0,0,0,.25);}
+  .icon-bar:first-child {margin-top: 0;}
+
+/* --------------------------------------------------------------------------
+   
+   --------------------------------------------------------------------------
+   
+   -------------------------------------------------------------------------- */
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {background-color: transparent; border: 0; overflow: hidden; /* IE 6/7 fallback */ *text-indent: -9999px;}
+
+.ir:before {content: ""; display: block; width: 0; height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {display: none !important; visibility: hidden;}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto;}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {visibility: hidden;}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {content: " "; /* 1 */ display: table; /* 2 */}
+
+.clearfix:after {clear: both;}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {*zoom: 1;}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,45 @@
+﻿#locationFinder label {
+   
+}
+.headerLine1 {
+    
+}
+.headerLine2 {
+    
+}
+h2 {
+}
+#contactUsSubmit  .control-label { width: 127px!important; }
+#contactUsSubmit .controls { margin-left: 0px!important; }
+#castMember .form-horizontal .control-label {
+        width: 340px!important;
+        margin-right:20px;
+}
+#castMember .controls {
+        margin-left: 0px!important;
+        width: 270px;
+        }
+#franchiseSubmit .control-label {
+        width: 400px!important;
+        margin-right:20px;
+    }
+#franchiseSubmit .controls {
+        margin-left: 0px!important;
+        width: 270px;
+}     
+#emailClubValidate .checkbox-label
+{
+    width: 160px;
+}
+#emailClubValidate .checkbox-control
+{
+    padding-left: 0px;
+}
+.form-horizontal .controls {
+    margin-left: 0px!important;
+}
+h3 
+{
+    line-height: 32px!important;
+    margin-bottom: -4px!important;
+}

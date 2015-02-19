@@ -1,0 +1,22 @@
+body { }
+
+#headerBG, 
+.navsidebar, 
+footer,  
+#socialicons, 
+.sidebar { display: none; }
+
+.row .span6, 
+.row .span8 { width: 100%; }
+
+a:link { font-weight: bold; }
+
+.contentHeader, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+.headerLine1, 
+.headerLine2 { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important; }

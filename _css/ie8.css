@@ -1,0 +1,14 @@
+﻿#contactUsSubmit .form-horizontal .control-label { width: 125px!important; }
+#contactUsSubmit .form-horizontal .controls { margin-left: 145px!important; }
+
+#logo {height: 67px !important; width: 160px !important; margin-right: -10px !important;}
+.dropdown {display: none;}
+    .drop {display: block;}
+.pager a:hover,
+.pager a.active {outline: solid 2px #ffffff;}
+
+.caption {background: #222222 !important;}
+
+.nav-btn.inner-top-shadow, 
+.dropdown {border-top: solid 2px #632c84;}
+    .dropdown > ul {background: #632c84;}

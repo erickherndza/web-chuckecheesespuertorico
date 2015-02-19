@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+<title>Share</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- Typekit Fonts -->
+<script type="text/javascript" src="//use.typekit.net/sml4yoz.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="_js/css_browser_selector.js"></script>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<link href="_css/site.css" rel="stylesheet" type="text/css"/>
+<link href="_css/print.css" rel="stylesheet" media="print"/>
+<!--[if IE 8]><link href="_css/ie8.css" rel="stylesheet" type="text/css"/><![endif]-->
+<!--[if IE 7]><link href="_css/ie7.css" rel="stylesheet" type="text/css"/><![endif]-->    
+<link href="_css/main.css" rel="stylesheet" type="text/css"/>
+<link href="_css/normalize.css" rel="stylesheet" type="text/css"/>
+<link href="_css/home.css" rel="stylesheet" type="text/css"/>
+<script>
+    window.fbAsyncInit = function () {
+        // init the FB JS SDK
+        FB.init({
+            appId: '111630799034453',
+            status: false,
+            xfbml: true,
+            logging: false
+        });
+
+        // Additional initialization code such as adding Event Listeners goes here
+        FB.Event.subscribe('edge.create', function (targetUrl) {
+            _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+        });
+    };
+
+    // Load the SDK asynchronously
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));
+</script>
+
+</head>
+<body style="" id="home">  
+<header class="clearfix">
+  <div class="bg-purple">
+    <div class="wrapper">
+      <div id="locationFinder" class="visible-phone" style="display: block!important">
+        <a class="btn" href="/chuckecheesespuertorico/localidades" id="link33">Ver Tiendas</a>
+      </div>      
+      <a id="headerRibbon" href="/chuckecheesespuertorico/chuck_E_club"><img id="best_deals" src="_images/ribbon_best-deals.png"></a>
+      <a class="nav-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+     <nav>
+        <ul class="clearfix">          
+          <li>
+            <span class="plus">&#43;</span><span class="minus">&#8211;</span>
+            <a class='nav-btn' id='experience_btn' href='/chuckecheesespuertorico/la-experiencia' data-image='_images/experience.jpg'>La Experiencia</a>
+            <div class="bg-purple dropdown experience">
+              <ul>
+                
+                <li id='our-promisesn'><a href='/chuckecheesespuertorico/promesa' data-image='_images/experience_our-promise.jpg'><span>Promesa a los Padres</span></a></li>
+                <li id='couponssn'><a href='/chuckecheesespuertorico/visita_chuck' data-image='_images/experience_coupons.jpg'><span>Visita Chuck E. Cheeses</span></a></li>
+                <li id='locationssn'><a href='/chuckecheesespuertorico/localidades' data-image='_images/experience_location-finder.jpg'><span>Localidades</span></a></li>
+                <li id='check'><a href='/chuckecheesespuertorico/kid_check' data-image='_images/KID-CHECK-frame.jpg'><span>Kid Check</span></a></li>
+                <li id='menusn'><a href='/chuckecheesespuertorico/menu' data-image='_images/experience_menu.jpg'><span>Menú</span></a></li>
+                <li id='couponssn'><a href='/chuckecheesespuertorico/cupones' data-image='_images/experience_coupons.jpg'><span>Cupones</span></a></li>
+              </ul>
+              <img src='_images/experience.jpg' alt=''/>
+            </div>    
+          </li>
+          <li>
+            <span class="plus">&#43;</span><span class="minus">&#8211;</span>
+            <a class='nav-btn' id='events_btn' href='/chuckecheesespuertorico/cumpleaños' data-image='_images/Birthday_100_Bonus_Nav_0414.png'>Cumpleaños</a>
+            <div class="bg-purple dropdown events">
+              <ul>
+                  <li id='visiting-cecsn'><a href='/chuckecheesespuertorico/actividad' data-image='_images/Website_Nav_GroupEvents_0814.jpg'><span>Porque Celebrarlo</span></a></li>
+                <li id='locationssn'><a href='/chuckecheesespuertorico/paquetes_cumpleaños' data-image='_images/events_fundraising_school.jpg'><span>Paquetes de Cumpleaños</span></a></li>
+                <li id='our-promisesn'><a href='/chuckecheesespuertorico/invitaciones' data-image='_images/events_invitations.jpg'><span>Reserva tu Cumpleaños</span></a></li>
+                <li id='our-promisesn'><a href='/chuckecheesespuertorico/invitaciones' data-image='_images/events_invitations.jpg'><span>Invita a Tus Amigos</span></a></li>
+              </ul>
+              <img src='_images/events.jpg' alt=''/>
+            </div>    
+          </li>
+        </ul>
+        <ul>
+          <li><a href="http://chuckecheesespr.com/chuckecheesespuertorico" id="logo"></a></li>
+        </ul>                  
+        <ul>        
+          <li>
+            <a class='nav-btn' id='activities_btn' href='/chuckecheesespuertorico/eventos' data-image='_images/activities.jpg'>Fiestas y Eventos </a>
+            <div class="bg-purple dropdown activities">
+              <ul>
+                <li id='visiting-cecsn'><a href='/chuckecheesespuertorico/actividad' data-image='_images/Website_Nav_GroupEvents_0814.jpg'><span>Actividad de grupos</span></a></li>
+                <li id='locationssn'><a href='/chuckecheesespuertorico/recaudar' data-image='_images/events_fundraising_school.jpg'><span>Recaudar fondos</span></a></li>
+                <li id='locationssn'><a href='/chuckecheesespuertorico/disco_kids' data-image='_images/events_fundraising_school.jpg'><span>Disco Kids</span></a></li>
+                <li id='our-promisesn'><a href='/chuckecheesespuertorico/party_retro' data-image='_images/events_invitations.jpg'><span>Party 70,80 y 90</span></a></li>
+                <li id='rewards-calendarssn'><a href='/chuckecheesespuertorico/calendario' data-image='_images/activities_rewards-calendars.jpg'><span>Calendario de Actividades</span></a></li>
+                 </ul>
+              <img src='_images/activities.jpg' alt=''/>
+            </div>    
+          </li>
+          <li>
+            <a class='nav-btn' id='multimedios_btn' href='/chuckecheesespuertorico/multimedios' data-image='_images/activities.jpg'>Multimedio</a>
+            <div class="bg-purple dropdown multimedios">
+              <ul>
+                <li id='gamessn'><a href='/chuckecheesespuertorico/juegos' data-image='_images/activities_games.jpg'><span>Juegos</span></a></li>
+                <li id='downloadssn'><a href='/chuckecheesespuertorico/descagas' data-image='_images/activities_downloads.jpg'><span>Descargas</span></a></li>
+                <li id='videossn'><a href='/chuckecheesespuertorico/videos' data-image='_images/activities_videos.jpg'><span>Videos</span></a></li>
+                <li id='rewards-calendarssn'><a href='/chuckecheesespuertorico/calendarios' data-image='_images/activities_rewards-calendars.jpg'><span>Calendarios de Premiaciones</span></a></li>
+              </ul>
+              <img src='_images/activities.jpg' alt=''/>
+            </div>    
+          </li>
+          <li>
+            <a class='nav-btn' id='share_btn' href='/chuckecheesespuertorico/chuck_E_club' data-image='_images/events_birthday_tokens.jpg'>Chuck E Club</a>
+            <div class="bg-purple dropdown share">
+              <ul>
+                <li id='/sharesn'><a href='/chuckecheesespuertorico/chuck_E_club' data-image='_images/meganav/share-memories.jpg'><span>Chuck E Club</span></a></li>
+                <li id='/sharesn'><a href='/chuckecheesespuertorico/chuck_E_club' data-image='_images/meganav/share-memories.jpg'><span>Tarjeta</span></a></li>
+              </ul>
+              <img src='_images/meganav/share-memories.jpg' alt=''/>
+            </div>    
+          </li>          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row-fluid">
+  		
+      <div class="span12">
+  			<div class="box red" style="background-color:#d40570;">
+  				<div class="tl">
+  					<div class="tr">
+  						<div class="tm">
+  						</div>
+  					</div>
+  				</div>
+  				<div class="ml">
+  					<div class="mr">
+              <div class="mm">
+                
+               <h1 class="contentHeader">Share Memories</h1>
+  
+<p>
+    Parents, please share&nbsp;your&nbsp;photos and videos of your favorite Chuck E. Cheese’s experience with <a href="mailto:memories@cecentertainment.com" id="link24">memories@cecentertainment.com</a> and look for them on Facebook, Twitter and Pinterest! You can also tag Chuck E. Cheese's in your Facebook photo or tweet your photos with the hashtag #ChuckERocks to share your great experience.</p>
+                                
+                                <div class="row-fluid">
+                                    <div class="span4">
+                                        <div class="share-section" data-twttr-id="twttr-sandbox-0">
+                                            <h3>Twitter Feed</h3>
+                                            <div class="tweet query"></div>
+                                            <iframe id="link25" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-timeline twitter-timeline-rendered" allowfullscreen="" title="Twitter Timeline" height="1199" style="border: none; max-width: 100%; min-width: 180px; width: 284px;"></iframe>
+                                            <script type="text/javascript">
+                                                !function (d, s, id) {
+                                                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                                    if (!d.getElementById(id)) {
+                                                        js = d.createElement(s); js.id = id;
+                                                        js.src = p + "://platform.twitter.com/widgets.js";
+                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                    }
+                                                }
+                                                (document, "script", "twitter-wjs");
+                                            </script>
+                                        </div>
+                                            <div class="share-section">
+                                                <h3>Mr. Peabody &amp; Sherman</h3>
+<p>
+    Look for special Chuck E. Cheese offers inside!</p>
+<p>
+    <img alt="" src="/_content_assets/files/images/Share Page/Peabody_Sherman_Post2_0914.png" style="width: 286px; height: 286px;"></p>
+                                                    <p></p>
+                                                <div class="socialshare">
+                                                    <p>Think this is great? Share with a friend:</p>
+                                                    <a class="facebook popup external" rel="FacebookShare" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=Mr.+Peabody+%26+Sherman&amp;p%5Bsummary%5D=&amp;p%5Burl%5D=%2F&amp;p%5Bimages%5D%5B0%5D=&amp;" id="link26"><span>Facebook</span></a>
+                                                    <a class="twitter popup external" rel="twitterShare" href="http://twitter.com/share?text=Mr.+Peabody+%26+Sherman&amp;url=" target="_blank" id="link27"><span>Tweet</span></a>
+                                                        <a class="pinterest popup external" rel="PinterestShare" href="http://pinterest.com/pin/create/button/?url=&amp;media=&amp;description=Mr.+Peabody+%26+Sherman" id="link28"><span>Pinterest</span></a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    
+                                    <div class="span4">
+                                            <div class="share-section">
+                                                <h3>Dad Jokes</h3>
+<p>
+    <span class="userContent">We're celebrating Dads and the laughs that they bring to our lives by enjoying your best "Dad Jokes" commented to our own Dad Joke posts. Share yours in the comments section of a posted Dad Joke on our Facebook page for a chance to win an awesome prize for Dad! <a href="https://www.facebook.com/OfficialChuckECheese" id="link29">https://www.facebook.com/OfficialChuckECheese</a> </span></p>
+<p>
+    <span class="userContent"><img alt="" src="/_content_assets/files/images/Share Page/Dad Jokes.jpg" style="width: 300px; height: 300px;"></span></p>
+                                                    <p></p>
+                                                <div class="socialshare">
+                                                    <p>Think this is great? Share with a friend:</p>
+                                                    <a class="facebook popup external" rel="FacebookShare" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=Dad+Jokes&amp;p%5Bsummary%5D=&amp;p%5Burl%5D=https%3a%2f%2fwww.facebook.com%2fphoto.php%3ffbid%3d677425318973290%26set%3dpb.113378218711339.-2207520000.1401993205.%26type%3d1%26theater%2F&amp;p%5Bimages%5D%5B0%5D=&amp;" id="link30"><span>Facebook</span></a>
+                                                    <a class="twitter popup external" rel="twitterShare" href="http://twitter.com/share?text=Dad+Jokes&amp;url=https%3a%2f%2fwww.facebook.com%2fphoto.php%3ffbid%3d677425318973290%26set%3dpb.113378218711339.-2207520000.1401993205.%26type%3d1%26theater" target="_blank" id="link31"><span>Tweet</span></a>
+                                                        <a class="pinterest popup external" rel="PinterestShare" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.facebook.com%2fphoto.php%3ffbid%3d677425318973290%26set%3dpb.113378218711339.-2207520000.1401993205.%26type%3d1%26theater&amp;media=&amp;description=Dad+Jokes" id="link32"><span>Pinterest</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="share-section">
+                                                <h3>Mama's Boys</h3>
+                                                    <div class="video-container" style="margin-bottom: 20px;">
+                                                        <iframe src="http://www.youtube.com/embed/OP54dSglVrg?rel=0&amp;wmode=transparent" frameborder="0" allowfullscreen="" wmode="Opaque"></iframe>
+                                                    </div>
+                                                   <p></p>
+                                                <div class="socialshare">
+                                                    <p>Think this is great? Share with a friend:</p>
+                                                    <a class="facebook popup external" rel="FacebookShare" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=Mama%27s+Boys&amp;p%5Bsummary%5D=&amp;p%5Burl%5D=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dOP54dSglVrg%2F&amp;p%5Bimages%5D%5B0%5D=OP54dSglVrg&amp;" id="link33"><span>Facebook</span></a>
+                                                    <a class="twitter popup external" rel="twitterShare" href="http://twitter.com/share?text=Mama%27s+Boys&amp;url=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dOP54dSglVrg" target="_blank" id="link34"><span>Tweet</span></a>
+                                                        <a class="pinterest popup external" rel="PinterestShare" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dOP54dSglVrg&amp;media=http://img.youtube.com/vi/OP54dSglVrg/0.jpg&amp;description=Mama%27s+Boys" id="link35"><span>Pinterest</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="share-section">
+                                                <h3>Happy Dance</h3>
+                                                    <div class="video-container" style="margin-bottom: 20px;">
+                                                        <iframe src="http://www.youtube.com/embed/MK_YZSXTGsM?rel=0&amp;wmode=transparent" frameborder="0" allowfullscreen="" wmode="Opaque"></iframe>
+                                                    </div>
+                                                   <p></p>
+                                                <div class="socialshare">
+                                                    <p>Think this is great? Share with a friend:</p>
+                                                    <a class="facebook popup external" rel="FacebookShare" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=Happy+Dance&amp;p%5Bsummary%5D=&amp;p%5Burl%5D=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dMK_YZSXTGsM%2F&amp;p%5Bimages%5D%5B0%5D=MK_YZSXTGsM&amp;" id="link36"><span>Facebook</span></a>
+                                                    <a class="twitter popup external" rel="twitterShare" href="http://twitter.com/share?text=Happy+Dance&amp;url=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dMK_YZSXTGsM" target="_blank" id="link37"><span>Tweet</span></a>
+                                                        <a class="pinterest popup external" rel="PinterestShare" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dMK_YZSXTGsM&amp;media=http://img.youtube.com/vi/MK_YZSXTGsM/0.jpg&amp;description=Happy+Dance" id="link38"><span>Pinterest</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="share-section">
+                                                <h3>Make-A-Wish Partner</h3>
+<p>
+    Chuck E. Cheese's is proud to partner with Make-A-Wish organizations to provide parties for seriously ill children. Every child deserves a place to go where they can go to just be a kid and it is especially important to us that those struggling with life-threatening illnesses remember to have fun. Daniel recently enjoyed a party before heading to Disney World to fulfill his wish of meeting Lightning McQueen!</p>
+<p>
+    <img alt="" src="/_content_assets/files/images/Share Page/MAW Daniel  Family with Chuck E.jpg" style="width: 300px; height: 298px;"></p>
+                                                    <p></p>
+                                                <div class="socialshare">
+                                                    <p>Think this is great? Share with a friend:</p>
+                                                    <a class="facebook popup external" rel="FacebookShare" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=Make-A-Wish+Partner&amp;p%5Bsummary%5D=&amp;p%5Burl%5D=https%3a%2f%2fwww.facebook.com%2fphoto.php%3ffbid%3d10204016629677741%26set%3da.1273090189041.2040694.1283510774%26type%3d1%26theater%2F&amp;p%5Bimages%5D%5B0%5D=&amp;" id="link39"><span>Facebook</span></a>
+                                                    <a class="twitter popup external" rel="twitterShare" href="http://twitter.com/share?text=Make-A-Wish+Partner&amp;url=https%3a%2f%2fwww.facebook.com%2fphoto.php%3ffbid%3d10204016629677741%26set%3da.1273090189041.2040694.1283510774%26type%3d1%26theater" target="_blank" id="link40"><span>Tweet</span></a>
+                                                        <a class="pinterest popup external" rel="PinterestShare" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.facebook.com%2fphoto.php%3ffbid%3d10204016629677741%26set%3da.1273090189041.2040694.1283510774%26type%3d1%26theater&amp;media=&amp;description=Make-A-Wish+Partner" id="link41"><span>Pinterest</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="share-section">
+                                                <h3>I love my mom</h3>
+                                                    <div class="video-container" style="margin-bottom: 20px;">
+                                                        <iframe src="http://www.youtube.com/embed/NuK4j_O1C_c?rel=0&amp;wmode=transparent" frameborder="0" allowfullscreen="" wmode="Opaque"></iframe>
+                                                    </div>
+                                                   <p></p>
+                                                <div class="socialshare">
+                                                    <p>Think this is great? Share with a friend:</p>
+                                                    <a class="facebook popup external" rel="FacebookShare" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=I+love+my+mom&amp;p%5Bsummary%5D=&amp;p%5Burl%5D=http%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dNuK4j_O1C_c%2F&amp;p%5Bimages%5D%5B0%5D=NuK4j_O1C_c&amp;" id="link42"><span>Facebook</span></a>
+                                                    <a class="twitter popup external" rel="twitterShare" href="http://twitter.com/share?text=I+love+my+mom&amp;url=http%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dNuK4j_O1C_c" target="_blank" id="link43"><span>Tweet</span></a>
+                                                        <a class="pinterest popup external" rel="PinterestShare" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dNuK4j_O1C_c&amp;media=http://img.youtube.com/vi/NuK4j_O1C_c/0.jpg&amp;description=I+love+my+mom" id="link44"><span>Pinterest</span></a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    
+                                    <div class="span4">
+                                            <div class="share-section">
+                                                <h3>Our Mom is Awesome</h3>
+                                                    <div class="video-container" style="margin-bottom: 20px;">
+                                                        <iframe src="http://www.youtube.com/embed/cYH8ejc4f7o?rel=0&amp;wmode=transparent" frameborder="0" allowfullscreen="" wmode="Opaque"></iframe>
+                                                    </div>
+                                                   <p></p>
+                                                <div class="socialshare"> 
+                                                    <p>Think this is great? Share with a friend:</p>
+                                                    <a class="facebook popup external" rel="FacebookShare" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=Our+Mom+is+Awesome&amp;p%5Bsummary%5D=&amp;p%5Burl%5D=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dcYH8ejc4f7o%2F&amp;p%5Bimages%5D%5B0%5D=cYH8ejc4f7o&amp;" id="link45"><span>Facebook</span></a>
+                                                    <a class="twitter popup external" rel="twitterShare" href="http://twitter.com/share?text=Our+Mom+is+Awesome&amp;url=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dcYH8ejc4f7o" target="_blank" id="link46"><span>Tweet</span></a>
+                                                        <a class="pinterest popup external" rel="PinterestShare" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dcYH8ejc4f7o&amp;media=http://img.youtube.com/vi/cYH8ejc4f7o/0.jpg&amp;description=Our+Mom+is+Awesome" id="link47"><span>Pinterest</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="share-section">
+                                                <h3>I Just Love Her</h3>
+                                                    <div class="video-container" style="margin-bottom: 20px;">
+                                                        <iframe src="http://www.youtube.com/embed/bIrmfAu7GYg?rel=0&amp;wmode=transparent" frameborder="0" allowfullscreen="" wmode="Opaque"></iframe>
+                                                    </div>
+                                                   <p></p>
+                                                <div class="socialshare"> 
+                                                    <p>Think this is great? Share with a friend:</p>
+                                                    <a class="facebook popup external" rel="FacebookShare" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=I+Just+Love+Her&amp;p%5Bsummary%5D=&amp;p%5Burl%5D=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dbIrmfAu7GYg%2F&amp;p%5Bimages%5D%5B0%5D=bIrmfAu7GYg&amp;" id="link48"><span>Facebook</span></a>
+                                                    <a class="twitter popup external" rel="twitterShare" href="http://twitter.com/share?text=I+Just+Love+Her&amp;url=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dbIrmfAu7GYg" target="_blank" id="link49"><span>Tweet</span></a>
+                                                        <a class="pinterest popup external" rel="PinterestShare" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dbIrmfAu7GYg&amp;media=http://img.youtube.com/vi/bIrmfAu7GYg/0.jpg&amp;description=I+Just+Love+Her" id="link50"><span>Pinterest</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="share-section">
+                                                <h3>School's Out for Summer</h3>
+<p>
+    The school year may be winding down, but the fun keeps rolling along at Chuck E. Cheese's! We are always adding games and attractions so come in today and see what's new.</p>
+<p>
+    <img alt="" src="/_content_assets/files/images/Share Page/Bus.jpg" style="width: 300px; height: 225px;"></p>
+<p>
+    &nbsp;</p>
+                                                    <p></p>
+                                                <div class="socialshare"> 
+                                                    <p>Think this is great? Share with a friend:</p>
+                                                    <a class="facebook popup external" rel="FacebookShare" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=School%27s+Out+for+Summer&amp;p%5Bsummary%5D=&amp;p%5Burl%5D=https%3a%2f%2fwww.facebook.com%2fphoto.php%3ffbid%3d672117499504072%26set%3dpb.113378218711339.-2207520000.1401921378.%26type%3d3%26theater%2F&amp;p%5Bimages%5D%5B0%5D=&amp;" id="link51"><span>Facebook</span></a>
+                                                    <a class="twitter popup external" rel="twitterShare" href="http://twitter.com/share?text=School%27s+Out+for+Summer&amp;url=https%3a%2f%2fwww.facebook.com%2fphoto.php%3ffbid%3d672117499504072%26set%3dpb.113378218711339.-2207520000.1401921378.%26type%3d3%26theater" target="_blank" id="link52"><span>Tweet</span></a>
+                                                        <a class="pinterest popup external" rel="PinterestShare" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.facebook.com%2fphoto.php%3ffbid%3d672117499504072%26set%3dpb.113378218711339.-2207520000.1401921378.%26type%3d3%26theater&amp;media=&amp;description=School%27s+Out+for+Summer" id="link53"><span>Pinterest</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="share-section">
+                                                <h3>Can you catch the magic?</h3>
+<p>
+    Your hair is flying, tickets are swirling, and the clock is ticking! Can you catch the Magic Ticket worth 1,000 tickets? Reserve a birthday party today for your chance at magic.</p>
+<p>
+    <img alt="" src="/_content_assets/files/images/Share Page/Magic Ticket.jpg" style="width: 300px; height: 282px;"></p>
+                                                    <p></p>
+                                                <div class="socialshare"> 
+                                                    <p>Think this is great? Share with a friend:</p>
+                                                    <a class="facebook popup external" rel="FacebookShare" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=Can+you+catch+the+magic%3f&amp;p%5Bsummary%5D=&amp;p%5Burl%5D=https%3a%2f%2fwww.facebook.com%2fphoto.php%3ffbid%3d665259006856588%26set%3da.119557761426718.13068.113378218711339%26type%3d1%26theater%2F&amp;p%5Bimages%5D%5B0%5D=&amp;" id="link54"><span>Facebook</span></a>
+                                                    <a class="twitter popup external" rel="twitterShare" href="http://twitter.com/share?text=Can+you+catch+the+magic%3f&amp;url=https%3a%2f%2fwww.facebook.com%2fphoto.php%3ffbid%3d665259006856588%26set%3da.119557761426718.13068.113378218711339%26type%3d1%26theater" target="_blank" id="link55"><span>Tweet</span></a>
+                                                        <a class="pinterest popup external" rel="PinterestShare" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.facebook.com%2fphoto.php%3ffbid%3d665259006856588%26set%3da.119557761426718.13068.113378218711339%26type%3d1%26theater&amp;media=&amp;description=Can+you+catch+the+magic%3f" id="link56"><span>Pinterest</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="share-section">
+                                                <h3>A Poem for Mom</h3>
+                                                    <div class="video-container" style="margin-bottom: 20px;">
+                                                        <iframe src="http://www.youtube.com/embed/jg3oJZM0Ztc?rel=0&amp;wmode=transparent" frameborder="0" allowfullscreen="" wmode="Opaque"></iframe>
+                                                    </div>
+                                                   <p></p>
+                                                <div class="socialshare"> 
+                                                    <p>Think this is great? Share with a friend:</p>
+                                                    <a class="facebook popup external" rel="FacebookShare" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=A+Poem+for+Mom&amp;p%5Bsummary%5D=&amp;p%5Burl%5D=http%3a%2f%2fwww.youtube.com%2fwatch%3fv%3djg3oJZM0Ztc%2F&amp;p%5Bimages%5D%5B0%5D=jg3oJZM0Ztc&amp;" id="link57"><span>Facebook</span></a>
+                                                    <a class="twitter popup external" rel="twitterShare" href="http://twitter.com/share?text=A+Poem+for+Mom&amp;url=http%3a%2f%2fwww.youtube.com%2fwatch%3fv%3djg3oJZM0Ztc" target="_blank" id="link58"><span>Tweet</span></a>
+                                                        <a class="pinterest popup external" rel="PinterestShare" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.youtube.com%2fwatch%3fv%3djg3oJZM0Ztc&amp;media=http://img.youtube.com/vi/jg3oJZM0Ztc/0.jpg&amp;description=A+Poem+for+Mom" id="link59"><span>Pinterest</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="share-section">
+                                                <h3>Mom Rules</h3>
+                                                    <div class="video-container" style="margin-bottom: 20px;">
+                                                        <iframe src="http://www.youtube.com/embed/8Wiicn3Zw8w?rel=0&amp;wmode=transparent" frameborder="0" allowfullscreen="" wmode="Opaque"></iframe>
+                                                    </div>
+                                                   <p></p>
+                                                <div class="socialshare"> 
+                                                    <p>Think this is great? Share with a friend:</p>
+                                                    <a class="facebook popup external" rel="FacebookShare" href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=Mom+Rules&amp;p%5Bsummary%5D=&amp;p%5Burl%5D=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3d8Wiicn3Zw8w%2F&amp;p%5Bimages%5D%5B0%5D=8Wiicn3Zw8w&amp;" id="link60"><span>Facebook</span></a>
+                                                    <a class="twitter popup external" rel="twitterShare" href="http://twitter.com/share?text=Mom+Rules&amp;url=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3d8Wiicn3Zw8w" target="_blank" id="link61"><span>Tweet</span></a>
+                                                        <a class="pinterest popup external" rel="PinterestShare" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3d8Wiicn3Zw8w&amp;media=http://img.youtube.com/vi/8Wiicn3Zw8w/0.jpg&amp;description=Mom+Rules" id="link62"><span>Pinterest</span></a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                            
+
+                            </div> <!-- /.mm -->
+                        </div>
+                    </div>
+                    <div class="bl">
+                        <div class="br">
+                            <div class="bm">
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.box -->
+            </div> <!-- /.span -->
+
+        </div> <!-- /.row -->
+</div>
+<!-- DEPRECATED <script type="text/javascript">
+    jQuery(function ($) {
+        $(".tweet").tweet({
+            username: "chuckecheese",
+            count: 15,
+            loading_text: "loading tweets...",
+            template: "{text}<br>{retweet_action}"
+        });
+    }).bind("loaded", function () {
+        $(this).find("a.tweet_action").click(function (ev) {
+            window.open(this.href, "Retweet",
+            'menubar=0,resizable=0,width=550,height=420,top=200,left=400');
+            ev.preventDefault();
+        });
+
+        $(".tweet_retweet").prepend('<i class="icon-retweet"></i>');
+    });
+
+    $(document).ready(function () {
+        $(".share-section .description p").prepend('<span class="quote">&ldquo;</span>');
+    });
+</script> -->
+<script type="text/javascript">
+    var share = {
+        removeSharePopup: function (ele) {
+            var shareId = $(ele).parent().find('.shareId').val();
+            $("#removeShareId").val(shareId);
+            $('#remove-share-modal').modal('show');
+        },
+        removeShare: function () {
+            var email = $("#removeEmail").val();
+            if (email == "") {
+                alert("Email is required");
+            } else {
+                $.post("/appshares/requestremoval", { shareId: $("#removeShareId").val(), email: $("#removeEmail").val() })
+                    .done(function (data) {
+                        if (data.error == "") {
+                            $('#remove-share-modal').modal('hide');
+                            alert("Request submitted successfully");
+                        } else {
+                            alert(data.error);
+                        }
+                    });
+            }
+        }
+    }
+    var defHeight = "500";
+    var defWidth = "760";
+    $(document).ready(function () {
+        $('#remove-share-modal').on('hide', function () {
+        });
+    });
+</script>
+<div class="modal hide fade" id="remove-share-modal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h3>Request Picture removal</h3>
+      </div> <!-- /.modal-header -->
+
+      <div class="modal-body">
+            <form id="RequestShareRemoval" action="/appshares/requestremoval" class="validate trackable well form-horizontal " method="post" novalidate="novalidate">
+            
+            <p>Please type in your email:</p>
+            <input type="text" class="email required" name="email" id="removeEmail"><br>
+            <input type="hidden" name="shareId" id="removeShareId"><br><br>
+            <input type="submit" value="Submit">
+            <input type="button" value="Terms and Privacy" onclick="location.href='http://chuckecheese.com/terms-and-privacy';">
+            </form>
+      </div> 
+      <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal" id="link63">Close</a>
+      </div> <!-- /.modal-footer -->
+</div><!-- /.modal -->
+<style type="text/css">
+    .modal-body { max-height: 650px!important; }
+</style>
+ <footer class="container" style="background: url('/_assets/img/bg-purple.jpg') repeat #9655b9; width: 100%; margin-top: 0;">
+    <nav>
+    <a href="/franchising" id="link40">Franchising</a>
+    <a href="/product-recalls" id="link41">Product Recalls</a>
+    <a href="/terms-and-privacy" id="link42">Terms and Privacy</a>
+    <a href="/site-map" id="link43">Site Map</a>
+    <a href="/careers" id="link44">Careers</a>
+        <a href="http://phx.corporate-ir.net/phoenix.zhtml?c=72589&amp;p=irol-irhome" id="link45">Investor Relations</a>
+        <a href="/snacks" target="_blank" id="link46">Snacks</a>
+        <a href="http://radiantcustomervoice.com/organizations/1996/pos_surveys/new" id="link47">Survey</a>
+        <a href="/forms/contactus" id="link48">Contact Us</a>
+        <a href="/contact-us/party-faqs" id="link49">FAQs</a>
+    </nav>
+    <div id="socialicons">
+        <fb:like href="https://www.facebook.com/OfficialChuckECheese" show_faces="false" send="false" layout="button_count" font="arial" colorscheme="light" action="like" style="display:inline !important" class=" fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=111630799034453&amp;color_scheme=light&amp;font=arial&amp;href=https%3A%2F%2Fwww.facebook.com%2FOfficialChuckECheese&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 86px; height: 20px;"><iframe name="f21363f69" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/plugins/like.php?action=like&amp;app_id=111630799034453&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FQjK2hWv6uak.js%3Fversion%3D41%23cb%3Df227678ad4%26domain%3Dwww.chuckecheese.com%26origin%3Dhttp%253A%252F%252Fwww.chuckecheese.com%252Ff217f36124%26relation%3Dparent.parent&amp;color_scheme=light&amp;font=arial&amp;href=https%3A%2F%2Fwww.facebook.com%2FOfficialChuckECheese&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false" class="" style="border: none; visibility: visible; width: 86px; height: 20px;"></iframe></span></fb:like>
+        <a id="facebook" class="social-media trackable external" href="https://www.facebook.com/OfficialChuckECheese" title="Facebook Footer" target="_blank"><span>Facebook</span></a><!--
+    --><a id="twitter" class="social-media trackable external" href="http://twitter.com/chuckecheese/" title="Twitter Footer" target="_blank"><span>Twitter</span></a><!--
+    --><a id="youtube" class="social-media trackable external" href="http://www.youtube.com/user/ChuckECheeseVideo" title="YouTube Footer" target="_blank"><span>YouTube</span></a><!--
+    --><a id="pinterest" class="social-media trackable external" href="http://pinterest.com/chuckecheese/" title="Pinterest Footer" target="_blank"><span>Pinterest</span></a><!--
+    --><a id="foursquare" class="social-media trackable external" href="https://foursquare.com/chuckecheese" title="Foursquare Footer" target="_blank"><span>foursquare</span></a><!--
+    --><a id="instagram" class="social-media trackable external" href="http://instagram.com/chuckecheese" title="Instagram Footer" target="_blank" style="background: url('/_assets/_images/instagram.png') no-repeat 0 0;"><span>Instagram</span></a><!--
+        --><a title="Google+ Footer" class="social-media trackable external" href="https://plus.google.com/100667335861370380047?prsrc=3" rel="publisher" target="_blank" style="text-decoration:none;" id="link56"><img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:24px;height:24px; margin-bottom: 16px;"></a>
+  </div>
+</footer>
+
+
+
+<div class="modal hide fade fixed-width" id="modal">
+  <div class="modal-header warning">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3>Warning</h3>
+  </div>
+  <div class="modal-body">
+      <p>You are leaving the Chuck E. Cheese's website and going to that of a non-affiliated third-party vendor engaged to provide online services for us. The vendor's site is not under our control and the security and privacy protection offered may be less than or differ from that of Chuck E. Cheese's. Do you want to continue?</p>
+      <!--<p>
+        <a href="#" id="external-link-display">External Link</a>
+      </p>-->
+  </div>
+  <footer class="container" style="background: url('_images/bg.jpg') repeat #9655b9; width: 100%; margin-top: 0;">
+  <nav>
+    <a href="/la-experiencia">La experiencia</a>
+    <a href="/fiestas -y-eventos">Fiestas y Eventos</a>
+    <a href="/cumpleaños">Cumpleaños</a>
+    <a href="/multimedia">Multimedia</a>
+    <a href="/ckid-club">Kid Club</a>
+    <a href="/reglas-de-Chuck-E-Cheese’s">Reglas de Chuck E. Cheese’s</a>
+    <a href="/snacks" target="_blank">Política de Privacidad</a>
+    <a href="/contacto">Contacto</a>
+  </nav>
+  <div id="socialicons">
+    <fb:like href="https://www.facebook.com/OfficialChuckECheese" show_faces="false" send="false" layout="button_count" font="arial" colorscheme="light" action="like"></fb:like>
+    <a id="facebook" class="social-media trackable external" href="https://www.facebook.com/OfficialChuckECheese" title="Facebook Footer" target="_blank"><span>Facebook</span></a><!--
+    --><a id="twitter" class="social-media trackable external" href="http://twitter.com/chuckecheese/" title="Twitter Footer" target="_blank"><span>Twitter</span></a><!--
+    --><a id="youtube" class="social-media trackable external" href="http://www.youtube.com/user/ChuckECheeseVideo" title="YouTube Footer" target="_blank"><span>YouTube</span></a><!--
+    --><a id="pinterest" class="social-media trackable external" href="http://pinterest.com/chuckecheese/" title="Pinterest Footer" target="_blank"><span>Pinterest</span></a><!--
+    --><a id="foursquare" class="social-media trackable external" href="https://foursquare.com/chuckecheese" title="Foursquare Footer" target="_blank"><span>foursquare</span></a><!--
+    --><a title="Google+ Footer" class="social-media trackable external" href="https://plus.google.com/100667335861370380047?prsrc=3" rel="publisher" target="_blank" style="text-decoration:none; position: absolute;"><img src="http://ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:24px;height:24px;"/></a>
+  </div>
+</footer>
+
+<div class="modal hide fade fixed-width" id="modal">
+    <div class="modal-header warning">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Warning</h3>
+    </div>
+    <div class="modal-body">
+        <p>You are leaving the Chuck E. Cheese's website and going to that of a non-affiliated third-party vendor engaged to provide online services for us. The vendor's site is not under our control and the security and privacy protection offered may be less than or differ from that of Chuck E. Cheese's. Do you want to continue?</p>
+        <!--<p>
+            <a href="#" id="external-link-display">External Link</a>
+        </p>-->
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal" id="link81">Close</a>
+        <a href="#" class="btn btn-purple" id="confirm-external-link">Continue</a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($('.download').length) {
+            $(".dcontainer").css('paddingRight', "0px");
+        }
+    });
+</script>
+
+
+
+
+        <!--[if IE 7]><script src="/bundles/json?v=bMo5pKunpjb4z2OGXBR-hs-So-UJDNsx2sRh96TpOpo1"></script>
+<![endif]-->
+<script src="/bundles/interiorjs?v=7Kue5TuTlLY5wjbdGxp1FuhL2V8cpsEsdykt4QFxdkY1"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var doc = $('html');
+        //Handle flash and touch devices
+        var isTouchDevice = "ontouchstart" in document.documentElement;
+        if (doc.hasClass('flash9') && !isTouchDevice) {
+            $("#carousel, #carouselThumbs").show();
+        } else if (!doc.hasClass('flash9') && !isTouchDevice) {
+            $(".games-no-flash").show();
+        } else if (isTouchDevice) {
+            $(".games-touch-device").show();
+        }
+    });
+</script>
+
+        <script>(function() { 
+var _fbq = window._fbq || (window._fbq = []); 
+if (!_fbq.loaded) { 
+var fbds = document.createElement('script'); 
+fbds.async = true; 
+fbds.src = '//connect.facebook.net/en_US/fbds.js'; 
+var s = document.getElementsByTagName('script')[0]; 
+s.parentNode.insertBefore(fbds, s); 
+_fbq.loaded = true; 
+} 
+_fbq.push(['addPixelId', '706542282751810']); 
+})(); 
+window._fbq = window._fbq || []; 
+window._fbq.push(['track', 'PixelInitialized', {}]); 
+</script> 
+<noscript>&lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=706542282751810&amp;amp;ev=PixelInitialized" /&gt;</noscript>
+        
+    <script src="/_assets/_js/jquery.gallery.js" type="text/javascript"></script>
+    <script src="/_assets/_js/main.js" type="text/javascript"></script>
+    <script src="/_assets/_js/site-tracking.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    
+</body>
+</html>

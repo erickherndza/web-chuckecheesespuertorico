@@ -1,0 +1,332 @@
+<div class="box red ml20">
+				<div class="tl">
+					<div class="tr">
+						<div class="tm">
+						</div>
+					</div>
+				</div>
+				<div class="ml">
+					<div class="mr">
+						<div class="mm">
+                            
+                            <style type="text/css">
+input[type="radio"] 
+{
+    margin-top: -1px;
+}
+.asterisk 
+{
+    position: relative;
+    top: 3px;
+}
+</style>
+<h1>Email Club</h1>
+<div class="clearfix">&nbsp;</div>
+<p>Join the Email Club and receive exclusive coupon deals, free tokens for your kid's birthday, kids activities and rewards.</p>
+
+
+
+<div id="FormBox">
+          <form action="/emailclub/register" class="validate form-horizontal trackable" id="emailClubSubmit" method="post" novalidate="novalidate">
+				<p>Fields with an * indicate required information.</p>
+                    <input type="hidden" name="bValidate" id="bValidate" value="">
+                    <input type="hidden" name="LocationAddress" id="LocationAddress" value="Pueblo Supermarket  Plaza Centro Ave. Rafael J. Cordero  Carr. 30">
+                    <input type="hidden" name="source" value="">
+                    <input type="hidden" name="Location" id="Location" value="Pueblo Supermarket  Plaza Centro Ave. Rafael J. Cordero  Carr. 30">
+                    <input type="hidden" name="LocationCity" id="LocationCity" value="Caguas">
+                    <input type="hidden" name="LocationState" id="LocationState" value="PR">
+                    <input type="hidden" name="LocationId" id="LocationId" value="3220">
+                    <input type="hidden" name="LocationZip" id="LocationZip" value="725">
+                    <input type="hidden" name="Dob" id="Dob" value="12/10/2001 12:00:00 AM">
+                    <div class="control-group">  
+                        <label class="control-label">Email:</label>
+                        <div class="controls">
+                        <input type="text" name="email" id="email" value="methoner@gmail.com" maxlength="150" class="required email notpersist">
+                        <span class="asterisk">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group">  
+                        <label class="control-label">Confirm Email:</label>
+                        <div class="controls">
+                        <input type="text" name="ConfirmEmail" id="ConfirmEmail" value="" maxlength="150" class="required email notpersist">
+                        <span class="asterisk">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group">  
+                        <label class="control-label">First Name:</label>
+                        <div class="controls">
+                        <input class="required notpersist" id="firstname" maxlength="30" name="firstname" type="text" value=""> <span class="asterisk">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group">  
+                        <label class="control-label">Last Name:</label> 
+                        <div class="controls">
+                        <input class="required notpersist" id="lastname" maxlength="30" name="lastname" type="text" value=""> <span class="asterisk">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group">  
+                        <label class="control-label">Country:</label>
+                        <div class="controls">
+                        <select class="required notpersist" id="country" name="country"><option value="usa">United States</option>
+<option value="can">Canada</option>
+</select>
+                        <span class="asterisk">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group">  
+                        <label class="control-label">Address:</label>
+                        <div class="controls">
+                        <input class="" id="address" maxlength="130" name="address" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="control-group">  
+                        <label class="control-label">City:</label>
+                        <div class="controls">
+                        <input class="" id="city" maxlength="130" name="city" type="text" value="">
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">  
+                        <label class="control-label">Zip/Postal Code:</label>
+                        <div class="controls">
+                        <input class="required zipcode notpersist" id="postal_code" maxlength="15" name="postal_code" type="text" value=""> <span class="asterisk">*</span>
+                        </div>
+                    </div>    
+                    <div class="control-group" style="display:none;">  
+                        <label class="control-label">Gender:</label>
+                        <div class="controls">
+                        <input type="text" name="Gender" value="NA">
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">  
+                        <label class="control-label">How often do you typically visit a Chuck E. Cheese's restaurant?</label>
+                        <div class="controls">
+                        <select class="required notpersist" id="numberofvisits" name="numberofvisits"><option value="">-- Select One--</option>
+<option value="41079">3 or more times per month</option>
+<option value="41080">1-2 times per month</option>
+<option value="41081">Once every 2-3 months</option>
+<option value="41082">Once every 4-6 months</option>
+<option value="41083">Once every 7-12 months</option>
+<option value="41085">Less Often</option>
+</select> <span class="asterisk">*</span>
+                        </div>
+                    </div>
+                    <div class="control-group">  
+                        <label class="control-label">Would you be interested in receiving weekday specials?</label>
+                        <div class="controls" style="margin-top:5px;">
+                        Yes
+                        <input class="notpersist" id="lunchspecials" name="lunchspecials" type="radio" value="1">
+                        No
+                        <input id="lunchspecials" name="lunchspecials" type="radio" value="0">
+                        </div>
+                    </div>
+                    <div class="control-group">  
+                        <label class="control-label">How many children do you have that are under 12? </label>
+                        <div class="controls">
+                        <select class="required" id="childcount" name="childcount"><option value="">-- Select One--</option>
+<option value="0">0</option>
+<option selected="selected" value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+</select> <span class="asterisk">*</span>
+                        </div>
+                    </div>
+                    <div style="" id="ChildInfo1" class="childBlock">
+    <div class="control-group">  
+        <label class="control-label">Child 1 Name</label>
+        <div class="controls">
+            <input type="text" value="" class="childName required" name="childName1">
+            <span class="asterisk">*</span>
+         </div>
+    </div>
+     <div class="control-group">  
+        <label class="control-label">Child 1 Birthday</label>
+        <div class="controls">
+            <input type="text" value="" name="dob1" class="dateDobValid hasDatepicker required" id="dp1418247000358">
+            <span class="asterisk">*</span>
+            <br>(mm/dd/yyyy)
+         </div>
+    </div>
+</div>
+
+<div style="display: none;" id="ChildInfo2" class="childBlock">
+    <div class="control-group">  
+        <label class="control-label">Child 2 Name</label>
+        <div class="controls">
+            <input type="text" value="" class="childName" name="childName2">
+            <span class="asterisk">*</span>
+         </div>
+    </div>
+     <div class="control-group">  
+        <label class="control-label">Child 2 Birthday</label>
+        <div class="controls">
+            <input type="text" value="" name="dob2" class="dateDobValid hasDatepicker" id="dp1418247000359">
+            <span class="asterisk">*</span>
+            <br>(mm/dd/yyyy)
+         </div>
+    </div>
+</div>
+
+<div style="display: none;" id="ChildInfo3" class="childBlock">
+    <div class="control-group">  
+        <label class="control-label">Child 3 Name</label>
+        <div class="controls">
+            <input type="text" value="" class="childName" name="childName3">
+            <span class="asterisk">*</span>
+         </div>
+    </div>
+     <div class="control-group">  
+        <label class="control-label">Child 3 Birthday</label>
+        <div class="controls">
+            <input type="text" value="" name="dob3" class="dateDobValid hasDatepicker" id="dp1418247000360">
+            <span class="asterisk">*</span>
+            <br>(mm/dd/yyyy)
+         </div>
+    </div>
+</div>
+
+<div style="display: none;" id="ChildInfo4" class="childBlock">
+    <div class="control-group">  
+        <label class="control-label">Child 4 Name</label>
+        <div class="controls">
+            <input type="text" value="" class="childName" name="childName4">
+            <span class="asterisk">*</span>
+         </div>
+    </div>
+     <div class="control-group">  
+        <label class="control-label">Child 4 Birthday</label>
+        <div class="controls">
+            <input type="text" value="" name="dob4" class="dateDobValid hasDatepicker" id="dp1418247000361">
+            <span class="asterisk">*</span>
+            <br>(mm/dd/yyyy)
+         </div>
+    </div>
+</div>
+
+<div style="display: none;" id="ChildInfo5" class="childBlock">
+    <div class="control-group">  
+        <label class="control-label">Child 5 Name</label>
+        <div class="controls">
+            <input type="text" value="" class="childName" name="childName5">
+            <span class="asterisk">*</span>
+         </div>
+    </div>
+     <div class="control-group">  
+        <label class="control-label">Child 5 Birthday</label>
+        <div class="controls">
+            <input type="text" value="" name="dob5" class="dateDobValid hasDatepicker" id="dp1418247000362">
+            <span class="asterisk">*</span>
+            <br>(mm/dd/yyyy)
+         </div>
+    </div>
+</div>
+
+<div style="display: none;" id="ChildInfo6" class="childBlock">
+    <div class="control-group">  
+        <label class="control-label">Child 6 Name</label>
+        <div class="controls">
+            <input type="text" value="" class="childName" name="childName6">
+            <span class="asterisk">*</span>
+         </div>
+    </div>
+     <div class="control-group">  
+        <label class="control-label">Child 6 Birthday</label>
+        <div class="controls">
+            <input type="text" value="" name="dob6" class="dateDobValid hasDatepicker" id="dp1418247000363">
+            <span class="asterisk">*</span>
+            <br>(mm/dd/yyyy)
+         </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function showChildren() {
+        var children = parseInt($("#childcount").val());
+       $('.childBlock').hide();
+       $('.childBlock input').removeClass('required');
+      for (i =1; i < (children+1); i++) {
+          $('#ChildInfo' + i).show();
+          $('#ChildInfo' + i + ' input').addClass('required');
+      }
+      if (children < 6) {
+          for (i = (children+1); i < 7; i++) {
+              $('#ChildInfo' + i + ' input').val('');
+          }
+      }
+      if (children == 1) {
+          $('#ChildInfo1').show();
+          $('#ChildInfo1 input').addClass('required');
+      }
+    }
+    $(document).ready(function () {
+        $("#childcount").change(function () {
+            showChildren();
+        });
+        //showChildren();
+    });
+</script>  
+                    <div class="control-group"> 
+        <label class="control-label">&nbsp;</label>
+        <div class="controls">
+             <button class="btn btn-orange" type="submit">Submit</button>
+        </div>
+</div>
+  
+            </form>
+</div>
+
+<script type="text/javascript">
+    function getStates() {
+        if ($("#country").val() == "usa") {
+            $("#stateus").show();
+            $("#statecan").hide();
+        } else if ($("#country").val() == "can") {
+            $("#stateus").hide();
+            $("#statecan").show();
+        }
+    }
+    $(document).ready(function () {
+        //$("#emailClubSubmit input, #emailClubSubmit textarea").not('.notpersist').persist();
+        $("input.dateDobValid").datepicker({
+            minDate: '-18Y',
+            maxDate: '+0Y',
+            yearRange: '-18:+0',
+            changeMonth: true,
+            changeYear: true
+        }).mask('99/99/9999');
+        $("input.dateDobValid").change(function () {
+            $(this).attr('value', $(this).val());
+        });
+        showChildren();
+        if ($("#country").val() == "usa") {
+            $("#stateus").val($("#state").val());
+        } else if ($("#country").val() == "can") {
+            $("#statecan").val($("#state").val());
+        }
+        $("#stateus").change(function () {
+            $("#state").val(na);
+            $("#state").val($("#stateus").val());
+        });
+        $("#statecan").change(function () {
+            $("#state").val($("#statecan").val());
+        });
+        $("#country").change(function () {
+            getStates();
+        });
+        getStates();
+    });
+    
+</script>
+						</div>
+					</div>
+				</div>
+		  		<div class="bl">
+		  			<div class="br">
+		  				<div class="bm">
+		  				</div>
+		  			</div>
+		  		</div>
+		  	</div>
